@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../YouTube clone/Views/TabBarViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../YouTube clone/Views/TabBsrViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../TabBarViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/javadmammadbeyli/Desktop/YouTube clone/YouTube clone/Assets.xcassets">
+   </FileRef>
+   <FileRef
       location = "self:YouTube clone.xcodeproj">
    </FileRef>
 </Workspace>

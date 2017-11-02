@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674496E41FAAFCF900F14226 /* TabBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496E31FAAFCF900F14226 /* TabBarViewCell.swift */; };
+		674496E61FAAFD1700F14226 /* YouTubeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496E51FAAFD1700F14226 /* YouTubeTabBar.swift */; };
+		674496E91FAAFD5200F14226 /* UIImage+alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496E81FAAFD5200F14226 /* UIImage+alpha.swift */; };
+		674496EB1FAAFD7700F14226 /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */; };
+		674496ED1FAAFDA000F14226 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496EC1FAAFDA000F14226 /* VideoCell.swift */; };
 		67CD40B51FA9A78F00379626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40B41FA9A78F00379626 /* AppDelegate.swift */; };
-		67CD40B71FA9A78F00379626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40B61FA9A78F00379626 /* ViewController.swift */; };
-		67CD40BA1FA9A78F00379626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CD40B81FA9A78F00379626 /* Main.storyboard */; };
-		67CD40BC1FA9A78F00379626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CD40BB1FA9A78F00379626 /* Assets.xcassets */; };
+		67CD40B71FA9A78F00379626 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40B61FA9A78F00379626 /* HomeViewController.swift */; };
 		67CD40BF1FA9A78F00379626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CD40BD1FA9A78F00379626 /* LaunchScreen.storyboard */; };
 		67CD40CA1FA9A78F00379626 /* YouTube_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40C91FA9A78F00379626 /* YouTube_cloneTests.swift */; };
 		67CD40D51FA9A78F00379626 /* YouTube_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40D41FA9A78F00379626 /* YouTube_cloneUITests.swift */; };
+		67CD40E51FA9C11800379626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CD40E41FA9C11800379626 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		674496E31FAAFCF900F14226 /* TabBarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewCell.swift; sourceTree = "<group>"; };
+		674496E51FAAFD1700F14226 /* YouTubeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeTabBar.swift; sourceTree = "<group>"; };
+		674496E81FAAFD5200F14226 /* UIImage+alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+alpha.swift"; sourceTree = "<group>"; };
+		674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
+		674496EC1FAAFDA000F14226 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		67CD40B11FA9A78E00379626 /* YouTube clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD40B41FA9A78F00379626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67CD40B61FA9A78F00379626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67CD40B91FA9A78F00379626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		67CD40BB1FA9A78F00379626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67CD40B61FA9A78F00379626 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67CD40BE1FA9A78F00379626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67CD40C01FA9A78F00379626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67CD40C51FA9A78F00379626 /* YouTube cloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YouTube cloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +54,7 @@
 		67CD40D01FA9A78F00379626 /* YouTube cloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YouTube cloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD40D41FA9A78F00379626 /* YouTube_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTube_cloneUITests.swift; sourceTree = "<group>"; };
 		67CD40D61FA9A78F00379626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67CD40E41FA9C11800379626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		674496E71FAAFD3900F14226 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				674496E81FAAFD5200F14226 /* UIImage+alpha.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		67CD40A81FA9A78E00379626 = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +113,11 @@
 		67CD40B31FA9A78E00379626 /* YouTube clone */ = {
 			isa = PBXGroup;
 			children = (
+				67CD40B61FA9A78F00379626 /* HomeViewController.swift */,
+				674496E71FAAFD3900F14226 /* Extensions */,
+				67CD40E61FAAFBC300379626 /* Views */,
 				67CD40B41FA9A78F00379626 /* AppDelegate.swift */,
-				67CD40B61FA9A78F00379626 /* ViewController.swift */,
-				67CD40B81FA9A78F00379626 /* Main.storyboard */,
-				67CD40BB1FA9A78F00379626 /* Assets.xcassets */,
+				67CD40E41FA9C11800379626 /* Assets.xcassets */,
 				67CD40BD1FA9A78F00379626 /* LaunchScreen.storyboard */,
 				67CD40C01FA9A78F00379626 /* Info.plist */,
 			);
@@ -123,6 +140,17 @@
 				67CD40D61FA9A78F00379626 /* Info.plist */,
 			);
 			path = "YouTube cloneUITests";
+			sourceTree = "<group>";
+		};
+		67CD40E61FAAFBC300379626 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				674496E31FAAFCF900F14226 /* TabBarViewCell.swift */,
+				674496E51FAAFD1700F14226 /* YouTubeTabBar.swift */,
+				674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */,
+				674496EC1FAAFDA000F14226 /* VideoCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CD40E51FA9C11800379626 /* Assets.xcassets in Resources */,
 				67CD40BF1FA9A78F00379626 /* LaunchScreen.storyboard in Resources */,
-				67CD40BC1FA9A78F00379626 /* Assets.xcassets in Resources */,
-				67CD40BA1FA9A78F00379626 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CD40B71FA9A78F00379626 /* ViewController.swift in Sources */,
+				674496E91FAAFD5200F14226 /* UIImage+alpha.swift in Sources */,
+				674496ED1FAAFDA000F14226 /* VideoCell.swift in Sources */,
+				674496E41FAAFCF900F14226 /* TabBarViewCell.swift in Sources */,
+				67CD40B71FA9A78F00379626 /* HomeViewController.swift in Sources */,
+				674496EB1FAAFD7700F14226 /* EdgeInsetLabel.swift in Sources */,
 				67CD40B51FA9A78F00379626 /* AppDelegate.swift in Sources */,
+				674496E61FAAFD1700F14226 /* YouTubeTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67CD40B81FA9A78F00379626 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67CD40B91FA9A78F00379626 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67CD40BD1FA9A78F00379626 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -429,8 +453,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF45SX3EL4;
 				INFOPLIST_FILE = "YouTube clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "az.bankrespublika.youtube.YouTube-clone";
+				PRODUCT_BUNDLE_IDENTIFIER = az.bankrespublika.youtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,8 +469,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF45SX3EL4;
 				INFOPLIST_FILE = "YouTube clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "az.bankrespublika.youtube.YouTube-clone";
+				PRODUCT_BUNDLE_IDENTIFIER = az.bankrespublika.youtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
