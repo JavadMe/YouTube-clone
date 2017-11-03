@@ -14,8 +14,9 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     let statusBarView = UIView()
     let cellIdentififer = "cellId"
     
+    lazy var videoView: VideoView = VideoView()
+    
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
         if(velocity.y > 0){
             UIView.animate(withDuration: 2.5, animations: {
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -50,9 +51,13 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
             tabBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tabBar.heightAnchor.constraint(equalToConstant: 45)
             ])
+        
+        
     }
     
     fileprivate func setupNavBar() {
+        
+        
         let accountImageView = UIImageView(image: UIImage(named: "account-icon")!.alpha(0.6))
         accountImageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -66,6 +71,11 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         camcorderLogo.translatesAutoresizingMaskIntoConstraints = false
         
         guard let navigationBarView = navigationController?.navigationBar else { return }
+        //let accountBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "account-icon").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+        //let searchBarButtonItem = UIBarButtonItem(image:#imageLiteral(resourceName: "search-icon").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+        //let recordBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "camcorder-icon").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+        //navigationItem.rightBarButtonItems = [accountBarButtonItem, searchBarButtonItem]
+        
         navigationBarView.isTranslucent = false
         navigationBarView.addSubview(accountImageView)
         navigationBarView.addSubview(searchImageView)
@@ -115,7 +125,7 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         setupNavBar()
         setupBottomTabBar()
-
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -152,4 +162,18 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         return 0
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let window = UIApplication.shared.keyWindow {
+            videoView.frame = CGRect(x: 0, y: 40, width: window.frame.width, height: window.frame.height/2)
+            videoView.videoImageView.image = indexPath.item % 2 == 0 ? #imageLiteral(resourceName: "taylor") : #imageLiteral(resourceName: "inna")
+            videoView.alpha = 1
+            videoView.minimized = false
+            window.addSubview(videoView)
+            
+            UIView.animate(withDuration: 0.2, animations: {
+                self.videoView.frame = CGRect(x: 0, y: 0, width: window.frame.width, height: window.frame.height)
+            })
+        }
+    }
+
 }

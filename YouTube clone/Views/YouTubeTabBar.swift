@@ -33,15 +33,16 @@ class YouTubeTabBar : UITabBar, UICollectionViewDelegate, UICollectionViewDataSo
         super.init(frame: frame)
         isTranslucent = false
         
-        
         addSubview(collectionView)
-        
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: topAnchor, constant: 4),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0)
             ])
+        
+        let selectedIndexPath = NSIndexPath(item: 0, section: 0)
+        collectionView.selectItem(at: selectedIndexPath as IndexPath, animated: false, scrollPosition: .centeredHorizontally)
         
     }
     
@@ -55,12 +56,7 @@ class YouTubeTabBar : UITabBar, UICollectionViewDelegate, UICollectionViewDataSo
         
         cell.label.text = sectionNames[indexPath.item]
         
-        let templateImage = sectionIcons[indexPath.item].withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        cell.icon.image = templateImage
-        cell.icon.tintColor = .darkGray
-        
-        if(indexPath.item == 0) {
-        }
+        cell.image = sectionIcons[indexPath.item]
         
         return cell
     }

@@ -48,7 +48,7 @@ class VideoCell: UICollectionViewCell {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "15+ Epic Design Fails That You Will Find Hard To Believe Actually Happened"
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 13)
         label.numberOfLines = 2
         return label
     }()

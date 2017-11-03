@@ -11,9 +11,18 @@ import UIKit
 
 class TabBarItemViewCell: UICollectionViewCell {
     
+    var image: UIImage = UIImage() {
+        didSet {
+            icon.image = image.withRenderingMode(.alwaysTemplate)
+            icon.tintColor = color
+        }
+    }
+    
+    var color: UIColor = UIColor.darkGray
+    
     override var isSelected: Bool {
         didSet{
-            let color: UIColor = isSelected ? .red : .darkGray
+            color = isSelected ? .red : .darkGray
             label.textColor = color
             let templateImage = icon.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
             icon.image = templateImage
@@ -33,6 +42,7 @@ class TabBarItemViewCell: UICollectionViewCell {
     
     lazy var label: UILabel = {
         let label = UILabel()
+        label.text = "Home"
         label.font = UIFont.systemFont(ofSize: 10)
         label.textColor = UIColor.darkGray
         label.textAlignment = .center
@@ -43,6 +53,9 @@ class TabBarItemViewCell: UICollectionViewCell {
     lazy var icon: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        let templateImage = #imageLiteral(resourceName: "home-icon").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        imageView.image = templateImage
+        imageView.tintColor = .gray
         
         return imageView
     }()
@@ -51,26 +64,15 @@ class TabBarItemViewCell: UICollectionViewCell {
         addSubview(icon)
         addSubview(label)
         
-        let templateImage = #imageLiteral(resourceName: "home-icon").withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        icon.image = templateImage
-        icon.tintColor = .gray
-        
-        label.text = "Home"
-        
-        //backgroundColor = .green
         NSLayoutConstraint.activate([
-            
             icon.centerXAnchor.constraint(equalTo: centerXAnchor),
             icon.topAnchor.constraint(equalTo: topAnchor)
-            
             ])
         
         NSLayoutConstraint.activate([
-            
             label.leadingAnchor.constraint(equalTo: leadingAnchor),
             label.trailingAnchor.constraint(equalTo: trailingAnchor),
             label.bottomAnchor.constraint(equalTo: bottomAnchor)
-            
             ])
     }
     

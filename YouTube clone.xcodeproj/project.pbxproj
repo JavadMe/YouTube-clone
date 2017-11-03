@@ -12,6 +12,7 @@
 		674496E91FAAFD5200F14226 /* UIImage+alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496E81FAAFD5200F14226 /* UIImage+alpha.swift */; };
 		674496EB1FAAFD7700F14226 /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */; };
 		674496ED1FAAFDA000F14226 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496EC1FAAFDA000F14226 /* VideoCell.swift */; };
+		674496EF1FAB2B2B00F14226 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674496EE1FAB2B2B00F14226 /* VideoView.swift */; };
 		67CD40B51FA9A78F00379626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40B41FA9A78F00379626 /* AppDelegate.swift */; };
 		67CD40B71FA9A78F00379626 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD40B61FA9A78F00379626 /* HomeViewController.swift */; };
 		67CD40BF1FA9A78F00379626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CD40BD1FA9A78F00379626 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		674496E81FAAFD5200F14226 /* UIImage+alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+alpha.swift"; sourceTree = "<group>"; };
 		674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
 		674496EC1FAAFDA000F14226 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		674496EE1FAB2B2B00F14226 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		67CD40B11FA9A78E00379626 /* YouTube clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD40B41FA9A78F00379626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67CD40B61FA9A78F00379626 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				674496E51FAAFD1700F14226 /* YouTubeTabBar.swift */,
 				674496EA1FAAFD7700F14226 /* EdgeInsetLabel.swift */,
 				674496EC1FAAFDA000F14226 /* VideoCell.swift */,
+				674496EE1FAB2B2B00F14226 /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				674496ED1FAAFDA000F14226 /* VideoCell.swift in Sources */,
 				674496E41FAAFCF900F14226 /* TabBarViewCell.swift in Sources */,
 				67CD40B71FA9A78F00379626 /* HomeViewController.swift in Sources */,
+				674496EF1FAB2B2B00F14226 /* VideoView.swift in Sources */,
 				674496EB1FAAFD7700F14226 /* EdgeInsetLabel.swift in Sources */,
 				67CD40B51FA9A78F00379626 /* AppDelegate.swift in Sources */,
 				674496E61FAAFD1700F14226 /* YouTubeTabBar.swift in Sources */,
